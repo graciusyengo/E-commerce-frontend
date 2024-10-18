@@ -1,0 +1,39 @@
+.header{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container-logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #333;
+    height: 100%;
+
+
+}
+
+.navbar{
+    display: none!important ;
+}
+
+.containerInput{
+ 
+    width: 100%; /* Le conteneur prend toute la largeur disponible */
+    border-radius: 23px;
+    text-align: center; /* Aligne les éléments en ligne au centre */
+
+}
+.containerInput input {
+    width: 90%; /* L'input prend toute la largeur de son parent */
+    box-sizing: border-box; /* S'assure que padding et bordure sont inclus dans la largeur */
+    border-radius: 4%;
+    background-color: #F5F5F5;
+    border: none; /* Enlève la bordure */
+    outline: none; /* Enlève le contour bleu lors du focus */
+    margin-top: 23px;
+    padding-left: 10px; 
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
