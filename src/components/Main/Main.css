@@ -1,0 +1,24 @@
+#hero{
+    background-image:linear-gradient(rgba(26, 20, 20, 0.4),rgba(22, 18, 18, 0.4)), url('../../../public/img/télécharger.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: #F7F7F9;
+    margin-top: 20px;
+   
+}
+.container{
+    color: white;
+}
+
+@media (max-width:376px){
+    #hero{
+        background-image:linear-gradient(rgba(26, 20, 20, 0.4),rgba(22, 18, 18, 0.4)), url('../../../public/img/télécharger.jpg');
+        height: 70vh;
+        background-size: cover; /* Redimensionne l'image pour couvrir toute la zone */
+       
+       
+    }
+
+
+}

@@ -36,6 +36,12 @@ function Header() {
                 <div className='containerInput'>
                     <input type="text" placeholder="Quoi chercher vous aujourd'hui ?" />
                 </div>
+
+                <div className='marquee'>
+                    <span>Nouvel arrivage </span>
+                <span>Les plus vendus</span>
+                <span>Les plus vendus</span>
+                </div>
             </div>
 
         </>
