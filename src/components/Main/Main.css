@@ -1,24 +1,148 @@
-#hero{
-    background-image:linear-gradient(rgba(26, 20, 20, 0.4),rgba(22, 18, 18, 0.4)), url('../../../public/img/télécharger.jpg');
+
+
+
+#hero-slide1 {
+    background-image: linear-gradient(rgba(5, 5, 5, 0.4), rgba(8, 8, 8, 0.4)), url('../../../public/img/télécharger.jpg');
     height: 100vh;
     background-repeat: no-repeat;
     width: 100%;
     background-color: #F7F7F9;
-    margin-top: 20px;
+    filter: blur();
    
+
 }
-.container{
+#hero-slide2 {
+    background-image: linear-gradient(rgba(5, 5, 5, 0.4), rgba(8, 8, 8, 0.4)), url('../../../public/img/sneakers.jpg');
+    background-size: cover;
+    width: 100%;
+    background-position: left; /* Pousse l'image vers la gauche */
+    height: 100vh;
+ 
+    filter: blur();
+   
+
+}
+#hero-slide3 {
+    background-image: linear-gradient(rgba(5, 5, 5, 0.4), rgba(8, 8, 8, 0.4)), url('../../../public/img/jackets.jpg');
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+    background-position: left; /* Pousse l'image vers la gauche */
+ 
+    filter: blur();
+   
+
+}
+
+.container {
     color: white;
 }
 
-@media (max-width:376px){
-    #hero{
-        background-image:linear-gradient(rgba(26, 20, 20, 0.4),rgba(22, 18, 18, 0.4)), url('../../../public/img/télécharger.jpg');
-        height: 70vh;
-        background-size: cover; /* Redimensionne l'image pour couvrir toute la zone */
-       
-       
+.hero-section {
+    text-align: justify;
+}
+
+@media (max-width:376px) {
+    #hero-slide1 {
+        background-image: linear-gradient(rgba(26, 20, 20, 0.4), rgba(22, 18, 18, 0.4)), url('../../../public/img/télécharger.jpg');
+        height: 60vh;
+        background-size: cover;
+        /* Redimensionne l'image pour couvrir toute la zone */
+        margin-top: -80px;
+        filter: blur();
+    }
+    #hero-slide2 {
+        background-image: linear-gradient(rgba(26, 20, 20, 0.4), rgba(22, 18, 18, 0.4)), url('../../../public/img/sneakers.jpg');
+        height: 60vh;
+        background-size: cover;
+        /* Redimensionne l'image pour couvrir toute la zone */
+        margin-top: -80px;
+        filter: blur();
+        background-position: left  ; /* Pousse l'image vers la gauche */
+        background-position: 50% center;
+    }
+    #hero-slide3 {
+        background-image: linear-gradient(rgba(26, 20, 20, 0.4), rgba(22, 18, 18, 0.4)), url('../../../public/img/jackets.jpg');
+        height: 60vh;
+        background-size: cover ;
+        background-repeat: no-repeat;
+        /* Redimensionne l'image pour couvrir toute la zone */
+        margin-top: -80px;
+        filter: blur();
+        background-position: left  ; /* Pousse l'image vers la gauche */
+        background-position: 65% center;
+        
+        
     }
 
+    .button {
 
+        transition: all 0.3s ease;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 17px;
+
+    }
+
+    .button:hover {
+        background-color: rgb(18, 138, 105);
+        transform: scale(1.05);
+        color: white;
+    }
+
+    .mySwiperMain .swiper-button-next,
+    .mySwiperMain .swiper-button-prev {
+        display: none;
+        /* Masque les boutons de navigation */
+    }
+
+    .mySwiperMain .swiper-pagination-bullet{
+        display: none;
+
+    }
+
+    .mySwiperMain {
+    margin-bottom: 0!important;
+    height: 60vh !important;
+
+    }
+  
+}
+
+.button {
+    transition: all 0.3s ease;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgb(18, 138, 105);
+    transform: scale(1.05);
+    color: white;
+}
+.mySwiperMain{
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 150px;
+    
+}
+
+
+
+.swiper-slide {
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

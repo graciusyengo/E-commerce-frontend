@@ -1,0 +1,19 @@
+@media (max-width: 376px) {
+    .container {
+      flex-direction: row; /* Disposition en ligne pour les écrans larges */
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .left, .right {
+      text-align: left; /* Réalignement à gauche pour les grands écrans */
+    }
+  
+    .right {
+      flex-direction: row; /* Liens en ligne pour les grands écrans */
+    }
+  
+    .link {
+      margin: 0 15px; /* Espace horizontal entre les liens */
+    }
+  }
