@@ -1,24 +1,244 @@
-#hero{
-    background-image:linear-gradient(rgba(26, 20, 20, 0.4),rgba(22, 18, 18, 0.4)), url('../../../public/img/télécharger.jpg');
+.mySwiperMain {
+    width: 100%;
+    height: 100vh;
+    overflow: auto !important;
+  
+  overflow: hidden !important;  
+
+}
+
+#hero-slide1 {
+    background-image: linear-gradient(rgba(5, 5, 5, 0.4), rgba(8, 8, 8, 0.4)), url('../../../public/img/télécharger.jpg');
     height: 100vh;
     background-repeat: no-repeat;
     width: 100%;
     background-color: #F7F7F9;
-    margin-top: 20px;
-   
-}
-.container{
-    color: white;
+    filter: blur();
+
+
 }
 
-@media (max-width:376px){
-    #hero{
-        background-image:linear-gradient(rgba(26, 20, 20, 0.4),rgba(22, 18, 18, 0.4)), url('../../../public/img/télécharger.jpg');
-        height: 70vh;
-        background-size: cover; /* Redimensionne l'image pour couvrir toute la zone */
-       
-       
+#hero-slide2 {
+    background-image: linear-gradient(rgba(5, 5, 5, 0.4), rgba(8, 8, 8, 0.4)), url('../../../public/img/sneakers.jpg');
+    background-size: cover;
+    width: 100%;
+    background-position: left;
+    /* Pousse l'image vers la gauche */
+    height: 100vh;
+
+    filter: blur();
+
+
+}
+
+#hero-slide3 {
+    background-image: linear-gradient(rgba(5, 5, 5, 0.4), rgba(8, 8, 8, 0.4)), url('../../../public/img/jackets.jpg');
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+    background-position: left;
+    /* Pousse l'image vers la gauche */
+
+    filter: blur();
+
+
+}
+
+.container .hero-section {
+    color: white;
+
+}
+
+.hero-section {
+    text-align: justify;
+}
+
+@media (max-width:376px) {
+    #hero-slide1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(rgba(26, 20, 20, 0.4), rgba(22, 18, 18, 0.4)), url('../../../public/img/télécharger.jpg');
+        height: 60vh;
+        background-size: cover;
+        /* Redimensionne l'image pour couvrir toute la zone */
+        margin-top: -80px;
+        filter: blur();
+    }
+
+    #hero-slide1  .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
     }
 
 
+    #hero-slide2 {
+        background-image: linear-gradient(rgba(26, 20, 20, 0.4), rgba(22, 18, 18, 0.4)), url('../../../public/img/sneakers.jpg');
+        height: 60vh;
+        background-size: cover;
+        /* Redimensionne l'image pour couvrir toute la zone */
+        margin-top: -80px;
+        filter: blur();
+        background-position: left;
+        /* Pousse l'image vers la gauche */
+        background-position: 50% center;
+    }
+    #hero-slide2  .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+    #hero-slide3 {
+        background-image: linear-gradient(rgba(26, 20, 20, 0.4), rgba(22, 18, 18, 0.4)), url('../../../public/img/jackets.jpg');
+        height: 60vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* Redimensionne l'image pour couvrir toute la zone */
+        margin-top: -80px;
+        filter: blur();
+        background-position: left;
+        /* Pousse l'image vers la gauche */
+        background-position: 65% center;
+
+
+    }
+    #hero-slide3  .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+    .button {
+
+        transition: all 0.3s ease;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 17px;
+
+    }
+
+    .button:hover {
+        background-color: rgb(18, 138, 105);
+        transform: scale(1.05);
+        color: white;
+    }
+
+     .swiper-button-next,
+     .swiper-button-prev {
+        display: none !important;
+        /* Masque les boutons de navigation */
+    }
+
+    .mySwiperMain .swiper-pagination-bullet {
+        display: none;
+
+    }
+
+    .mySwiperMain {
+        margin-bottom: 0 !important;
+        height: 60vh !important;
+
+    }
 }
+
+.button {
+    transition: all 0.3s ease;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgb(18, 138, 105);
+    transform: scale(1.05);
+    color: white;
+}
+
+
+
+
+
+.swiper-slide {
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* SECTION  why-choose-us */
+#why-choose-us .container .benefits-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.benefit-item {
+    display: flex;
+    width: 100%;
+justify-content: space-around;
+    align-items: center;
+width: 300px;
+    background-color: white;
+    margin-right: 20px;
+    padding: 20px;
+}
+.benefit-item  .benefit-title{
+    font-size: 18px;
+    margin-top: 5px;
+
+}
+
+
+@media (max-width:376px) {
+    #why-choose-us .container .benefits-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-top: 1px;
+    }
+
+    .benefit-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        margin-top: 20px;
+        padding: 20px;
+        list-style: none;
+        width: 250px;
+        height: 100px;
+        font-size: 16px;
+    }
+    .benefit-item  .benefit-title{
+        font-size: 18px;
+        margin-top: 9px;
+    }
+ 
+}
+
+
+
