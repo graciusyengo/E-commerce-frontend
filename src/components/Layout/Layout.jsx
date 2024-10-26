@@ -4,13 +4,15 @@ import Footer from './Footer/Footer.jsx';
 import { Outlet } from 'react-router-dom';  // Assure-toi d'importer Outlet
 import Main from '../Main/Main.jsx';
 import Products from '../Products-Carousel/Products.jsx';
+import ProductsList from '../ProductsList/ProductsList.jsx';
 
 function Layout() {
     return (
         <div>
             <Header />
             <Main/> 
-            <Products/>          
+            <Products/>
+            <ProductsList/>          
              <Outlet />
             <Footer />
         </div>
